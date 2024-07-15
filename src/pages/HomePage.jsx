@@ -1,9 +1,17 @@
+import Banner from "../components/Layout/Banner";
+import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
+import VideoSection from "../components/VideoSection/VideoSection";
 
 export const HomePage = () => {
     return (
-      <Header/>
-      <sectionvideo
+      <>
+        <Header/>
+        <Banner/>
+        <VideoSection/>
+        <VideoSection/>
+        <Footer/>
+      </>
     )
 }
   

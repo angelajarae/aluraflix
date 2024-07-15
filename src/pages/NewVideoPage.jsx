@@ -1,6 +1,14 @@
+import Header from "../components/Layout/Header";
+import Footer from "../components/Layout/Footer";
+import NewSection from "../components/NewSection/NewSection";
+
 export const NewVideoPage = () => {
     return (
-      <div>NewVideoPage</div>
+      <>
+        <Header/>
+        <NewSection/>
+        <Footer/>
+      </>
     )
 }
   

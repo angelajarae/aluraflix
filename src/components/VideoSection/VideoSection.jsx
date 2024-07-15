@@ -1,6 +1,19 @@
+import VideoTitle from "./VideoTitle"; 
+import VideoCard from "./VideoCard";
+import EditModal from "./EditModal";
+
 export const VideoSection = () => {
   return (
-    <div>VideoSection</div>
+    <section>
+      <VideoTitle/>
+      <VideoCard/>
+      <VideoCard/>
+      <VideoCard/>
+      <VideoCard/>
+      <VideoCard/>
+      <VideoCard/>
+      <EditModal/>
+    </section>
   )
 }
 
