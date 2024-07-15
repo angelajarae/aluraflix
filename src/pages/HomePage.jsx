@@ -1,6 +1,9 @@
+import Header from "../components/Layout/Header";
+
 export const HomePage = () => {
     return (
-      <div>HomePage</div>
+      <Header/>
+      <sectionvideo
     )
 }
   
