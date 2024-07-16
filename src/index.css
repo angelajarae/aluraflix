@@ -10,3 +10,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@layer utilities {
+  .box-blue-shadow{
+    box-shadow: inset 2px 2px 6px #2563eb,inset -2px -2px 6px #2563eb;
+  }
+  .top-blue-shadow{
+    box-shadow: 0px -4px 4px #2563eb;
+  }
+}

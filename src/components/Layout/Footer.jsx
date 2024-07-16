@@ -1,6 +1,10 @@
+import Logo from "../../assets/images/logo.png";
+
 export const Footer = () => {
     return (
-      <footer>Footer</footer>
+      <footer className="bg-customGray flex justify-center py-4 top-blue-shadow">
+        <img src={Logo}/>
+      </footer>
     )
 }
 

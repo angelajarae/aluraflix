@@ -1,20 +1,18 @@
-import VideoTitle from "./VideoTitle"; 
-import VideoCard from "./VideoCard";
-import EditModal from "./EditModal";
+import React from "react";
+import Title from "./VideoTitle";
+import Card from "./VideoCard";
 
-export const VideoSection = () => {
+const VideoSection = ({ title, videos, setModalOpen, updateVideos, setSelectedVideo }) => {
   return (
-    <section>
-      <VideoTitle/>
-      <VideoCard/>
-      <VideoCard/>
-      <VideoCard/>
-      <VideoCard/>
-      <VideoCard/>
-      <VideoCard/>
-      <EditModal/>
+    <section className="flex flex-col items-start p-10 bg-customGray">
+      <Title title={title} />
+      <div className="grid grid-cols-3 gap-4 mt-4 w-full">
+        {videos.map((video) => (
+          <Card key={video.id} video={video} setModalOpen={setModalOpen} updateVideos={updateVideos} setSelectedVideo={setSelectedVideo}/>
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default VideoSection;
